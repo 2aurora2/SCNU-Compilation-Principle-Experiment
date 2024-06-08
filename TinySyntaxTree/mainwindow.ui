@@ -89,7 +89,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="word">
      <attribute name="title">
@@ -242,7 +242,7 @@
   </widget>
   <action name="actionopen">
    <property name="icon">
-    <iconset resource="resource.qrc">
+    <iconset resource="../LALR/resource.qrc">
      <normaloff>:/icon/open.png</normaloff>:/icon/open.png</iconset>
    </property>
    <property name="text">
@@ -251,7 +251,7 @@
   </action>
   <action name="actionsave">
    <property name="icon">
-    <iconset resource="resource.qrc">
+    <iconset resource="../LALR/resource.qrc">
      <normaloff>:/icon/save.png</normaloff>:/icon/save.png</iconset>
    </property>
    <property name="text">
@@ -260,7 +260,7 @@
   </action>
   <action name="actionanalyse">
    <property name="icon">
-    <iconset resource="resource.qrc">
+    <iconset>
      <normaloff>:/icon/analyse.png</normaloff>:/icon/analyse.png</iconset>
    </property>
    <property name="text">
@@ -268,8 +268,6 @@
    </property>
   </action>
  </widget>
- <resources>
-  <include location="resource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoDialog</class>
+ <widget class="QDialog" name="InfoDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>使用说明</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>320</y>
+     <width>701</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Ok</set>
+   </property>
+   <property name="centerButtons">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>691</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;1. 软件的功能主要包括“打开文法”“保存文法”“文法分析”；&lt;/p&gt;&lt;p&gt;2. 对于文法规则的输入，可以直接在文法输入框输入，也可以打开存有文法规则的txt&lt;/p&gt;&lt;p&gt;文件，除此之外可以将文法输入框的文法保存为对应的txt文件；&lt;/p&gt;&lt;p&gt;3. 对于文法规则的输入有一定的限制：&lt;span style=&quot; font-weight:600; color:#ff5500;&quot;&gt;词与词之间需要以空格分隔&lt;/span&gt;，比如exp -&amp;gt; + | -&lt;/p&gt;&lt;p&gt;每个token之间有空格隔开；&lt;/p&gt;&lt;p&gt;4. 对于文法规则的分析，会展示非终结符的first集合、follow集合以及文法对应的LR(1)&lt;/p&gt;&lt;p&gt;的DFA图，并且在该文法为LALR(1)文法时展示对应的LALR(1)DFA图、LALR(1)分析表；&lt;/p&gt;&lt;p&gt;5. LALR1分析表展示前会先判断是否存在归约-归约冲突、移进-归约冲突，若存在则不&lt;/p&gt;&lt;p&gt;会展示分析表并弹出提示框；&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>InfoDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>InfoDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

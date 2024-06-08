@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>save.png</file>
+        <file>open.png</file>
+        <file>sentence.png</file>
+        <file>rule.png</file>
+    </qresource>
+</RCC>
